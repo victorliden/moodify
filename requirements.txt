@@ -1,0 +1,5 @@
+spotipy
+typing
+PyQt6
+Flask
+python-dotenv

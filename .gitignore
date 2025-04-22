@@ -1,0 +1,6 @@
+.env
+mood_playlists.txt
+__pycache__/
+*.pyc
+venv/
+.vscode
