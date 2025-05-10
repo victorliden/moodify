@@ -4,3 +4,4 @@ PyQt6
 Flask
 python-dotenv
 openai
+gunicorn
