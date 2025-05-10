@@ -1,5 +1,170 @@
 [
     {
+        "title": "The Way I Love You",
+        "artists": [
+            "Jorja Smith"
+        ],
+        "genres": [],
+        "album": "The Way I Love You",
+        "id": "6u1xR1LKAiahXPrwjNCkky"
+    },
+    {
+        "title": "Strawberry Milkshake",
+        "artists": [
+            "SOFY"
+        ],
+        "genres": [],
+        "album": "Strawberry Milkshake",
+        "id": "72RGQ9yvYxLpNLZwe9EDmf"
+    },
+    {
+        "title": "Bright Lights Bigger City",
+        "artists": [
+            "CeeLo Green"
+        ],
+        "genres": [],
+        "album": "The Lady Killer (Deluxe)",
+        "id": "7kPYMrNaz5UTih75OfjTIV"
+    },
+    {
+        "title": "Lately",
+        "artists": [
+            "Celeste",
+            "Gotts Street Park"
+        ],
+        "genres": [],
+        "album": "Not Your Muse (Deluxe)",
+        "id": "2WRDu73mfK4aZiVucqs0PZ"
+    },
+    {
+        "title": "Favourite Kind Of Girl",
+        "artists": [
+            "Gotts Street Park",
+            "Flikka"
+        ],
+        "genres": [],
+        "album": "Volume Two",
+        "id": "7HARo0TZ38IK458jT0nwGa"
+    },
+    {
+        "title": "California Dreamin'",
+        "artists": [
+            "Eddie Hazel"
+        ],
+        "genres": [
+            "psychedelic rock",
+            "funk rock"
+        ],
+        "album": "Game, Dames And Guitar Thangs",
+        "id": "7E5p9vyjnx7C90DU8Jv1PI"
+    },
+    {
+        "title": "Biological Speculation",
+        "artists": [
+            "Funkadelic"
+        ],
+        "genres": [
+            "funk",
+            "funk rock"
+        ],
+        "album": "America Eats Its Young",
+        "id": "1S4igP7OpCUIEC5l75DssU"
+    },
+    {
+        "title": "Maggot Brain",
+        "artists": [
+            "Funkadelic"
+        ],
+        "genres": [
+            "funk",
+            "funk rock"
+        ],
+        "album": "Maggot Brain",
+        "id": "3utrFnKNa1QSmUIm8QxHEC"
+    },
+    {
+        "title": "LET'S GO",
+        "artists": [
+            "Jaden Bojsen",
+            "Sami Brielle"
+        ],
+        "genres": [],
+        "album": "LET'S GO",
+        "id": "20Y4EAmSXru3foatDg4OqN"
+    },
+    {
+        "title": "Afraid To Feel",
+        "artists": [
+            "LF SYSTEM"
+        ],
+        "genres": [],
+        "album": "Afraid To Feel",
+        "id": "40SBS57su9xLiE1WqkXOVr"
+    },
+    {
+        "title": "Lauren (I Can't Stay Forever)",
+        "artists": [
+            "Oden & Fatzo"
+        ],
+        "genres": [
+            "disco house",
+            "house"
+        ],
+        "album": "Lauren (I Can't Stay Forever)",
+        "id": "33tYADyL2aZctrvR59K1bQ"
+    },
+    {
+        "title": "Take Me For a Little While",
+        "artists": [
+            "The Royal Jesters"
+        ],
+        "genres": [
+            "doo-wop"
+        ],
+        "album": "Royal Jesters: English Oldies",
+        "id": "6uBBABC1IPIjUCHZkzjlls"
+    },
+    {
+        "title": "Down To The Waterline",
+        "artists": [
+            "Dire Straits"
+        ],
+        "genres": [
+            "classic rock"
+        ],
+        "album": "Dire Straits",
+        "id": "7fYKKFD0jiSlMDgG9IUs1q"
+    },
+    {
+        "title": "Foolmuse",
+        "artists": [
+            "Peter Cat Recording Co."
+        ],
+        "genres": [
+            "indian indie"
+        ],
+        "album": "BETA",
+        "id": "7ab0HieXGKChMstA42bn69"
+    },
+    {
+        "title": "Signs",
+        "artists": [
+            "Snoop Dogg",
+            "Charlie Wilson",
+            "Justin Timberlake"
+        ],
+        "genres": [
+            "sexy drill",
+            "g-funk",
+            "west coast hip hop",
+            "rap",
+            "gangster rap",
+            "hip hop"
+        ],
+        "album": "R&G (Rhythm & Gangsta): The Masterpiece",
+        "id": "4HSAJpNocVNJbwbQvtCMdO"
+    },
+    {
         "title": "bad man",
         "artists": [
             "Q"
@@ -27,8 +192,8 @@
             "Kendrick Lamar"
         ],
         "genres": [
-            "west coast hip hop",
-            "hip hop"
+            "hip hop",
+            "west coast hip hop"
         ],
         "album": "Mr. Morale & The Big Steppers",
         "id": "6BU1RZexmvJcBjgagVVt3M"
@@ -188,8 +353,8 @@
             "Fleetwood Mac"
         ],
         "genres": [
-            "soft rock",
-            "classic rock"
+            "classic rock",
+            "soft rock"
         ],
         "album": "Rumours (Super Deluxe)",
         "id": "4nZi6XNe36Ut4Nij3IQ1yC"
@@ -211,10 +376,10 @@
             "Bad Bunny"
         ],
         "genres": [
+            "urbano latino",
             "reggaeton",
             "trap latino",
-            "latin",
-            "urbano latino"
+            "latin"
         ],
         "album": "DeB\u00cd TiRAR M\u00e1S FOToS",
         "id": "3sK8wGT43QFpWrvNQsrQya"
@@ -302,9 +467,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "Definitely Maybe (Deluxe Edition Remastered)",
         "id": "57bbMdaWpthoPTfuU9TFvQ"
@@ -357,9 +522,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "Definitely Maybe (Deluxe Edition Remastered)",
         "id": "1AvavliFQoc2l0ZCCWa5VG"
@@ -370,9 +535,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "Definitely Maybe (Deluxe Edition Remastered)",
         "id": "0if8wueNrAVLfwSH7l1ANJ"
@@ -392,9 +557,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "Sad Song (Mauldeth Road West Demo, Nov '92)",
         "id": "52T65lyjsgArtoojwttcvU"
@@ -405,9 +570,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "(What's The Story) Morning Glory? (Deluxe Remastered Edition)",
         "id": "2A7GGXmTlXuH9LOvBXgOX4"
@@ -418,9 +583,9 @@
             "Oasis"
         ],
         "genres": [
+            "britpop",
             "madchester",
-            "rock",
-            "britpop"
+            "rock"
         ],
         "album": "Heathen Chemistry",
         "id": "0SlpFHdk4UHBDzCEoXzy14"
@@ -451,8 +616,8 @@
             "Men I Trust"
         ],
         "genres": [
-            "indie pop",
-            "bedroom pop"
+            "bedroom pop",
+            "indie pop"
         ],
         "album": "Say, Can You Hear",
         "id": "16Ky4KZFBlAnFzsgQOn5MT"
@@ -504,11 +669,11 @@
             "Bob Dylan"
         ],
         "genres": [
+            "folk rock",
             "singer-songwriter",
             "roots rock",
-            "folk",
-            "folk rock",
-            "country rock"
+            "country rock",
+            "folk"
         ],
         "album": "The Times They Are A-Changin'",
         "id": "52vA3CYKZqZVdQnzRrdZt6"
@@ -541,11 +706,11 @@
             "Bob Dylan"
         ],
         "genres": [
+            "folk rock",
             "singer-songwriter",
             "roots rock",
-            "folk",
-            "folk rock",
-            "country rock"
+            "country rock",
+            "folk"
         ],
         "album": "Highway 61 Revisited",
         "id": "3AhXZa8sUQht0UEdBJgpGc"
@@ -638,9 +803,9 @@
             "Otis Redding"
         ],
         "genres": [
-            "soul",
             "motown",
-            "soul blues"
+            "soul blues",
+            "soul"
         ],
         "album": "The Dock of the Bay (Mono)",
         "id": "3zBhihYUHBmGd2bcQIobrF"
@@ -651,8 +816,8 @@
             "Eagles"
         ],
         "genres": [
-            "soft rock",
-            "classic rock"
+            "classic rock",
+            "soft rock"
         ],
         "album": "One of These Nights (2013 Remaster)",
         "id": "608xszaAxVh4m7NcKJiAbF"
@@ -676,8 +841,8 @@
             "The Smiths"
         ],
         "genres": [
-            "madchester",
             "new wave",
+            "madchester",
             "jangle pop"
         ],
         "album": "The Smiths",
@@ -698,8 +863,8 @@
             "iNi Kamoze"
         ],
         "genres": [
-            "reggae",
-            "roots reggae"
+            "roots reggae",
+            "reggae"
         ],
         "album": "16 Vibes",
         "id": "0hr9CoeDSUMmQQ7ZgTLRzh"
@@ -710,8 +875,8 @@
             "Fleetwood Mac"
         ],
         "genres": [
-            "soft rock",
-            "classic rock"
+            "classic rock",
+            "soft rock"
         ],
         "album": "Tango In the Night (Deluxe Edition)",
         "id": "4CoSCPlKNrWli7E5kFtbcl"
@@ -731,8 +896,8 @@
             "Patrice Rushen"
         ],
         "genres": [
-            "disco",
             "post-disco",
+            "disco",
             "jazz funk"
         ],
         "album": "Straight from the Heart (Remastered)",
@@ -744,8 +909,8 @@
             "Oliver Cheatham"
         ],
         "genres": [
-            "disco",
-            "post-disco"
+            "post-disco",
+            "disco"
         ],
         "album": "Daddy Cool",
         "id": "58bsVCyN73XiWPhxRmvZi3"
@@ -785,10 +950,10 @@
             "Led Zeppelin"
         ],
         "genres": [
+            "classic rock",
             "hard rock",
-            "rock and roll",
             "rock",
-            "classic rock"
+            "rock and roll"
         ],
         "album": "Led Zeppelin IV (Deluxe Edition)",
         "id": "5CQ30WqJwcep0pYcV4AMNc"
@@ -828,10 +993,10 @@
             "piri & tommy"
         ],
         "genres": [
-            "liquid funk",
-            "drum and bass",
             "uk garage",
-            "rally house"
+            "drum and bass",
+            "rally house",
+            "liquid funk"
         ],
         "album": "froge.mp3",
         "id": "5mfGEs5n647v4WE3K5YmBy"
@@ -842,8 +1007,8 @@
             "Angie Stone"
         ],
         "genres": [
-            "soul",
-            "neo soul"
+            "neo soul",
+            "soul"
         ],
         "album": "Mahogany Soul",
         "id": "3tZm76otWH20xzJC7icHCk"
@@ -953,8 +1118,8 @@
             "Curtis Mayfield"
         ],
         "genres": [
-            "soul",
-            "motown"
+            "motown",
+            "soul"
         ],
         "album": "People Never Give Up",
         "id": "2cK7SJ2O3CqDRHeixvFKgh"
@@ -983,8 +1148,8 @@
             "Geraldine Hunt"
         ],
         "genres": [
-            "disco",
-            "post-disco"
+            "post-disco",
+            "disco"
         ],
         "album": "Can't Fake the Feeling",
         "id": "3WtL910PEMIjJkkpM4xMKU"
@@ -1141,8 +1306,8 @@
             "Thin Lizzy"
         ],
         "genres": [
-            "hard rock",
-            "classic rock"
+            "classic rock",
+            "hard rock"
         ],
         "album": "Bad Reputation (Expanded Edition)",
         "id": "6BmzbaB08O0FjHXeS0cR5b"
@@ -1175,9 +1340,9 @@
             "Aretha Franklin"
         ],
         "genres": [
-            "soul",
             "jazz blues",
-            "motown"
+            "motown",
+            "soul"
         ],
         "album": "Young, Gifted and Black",
         "id": "7L4G39PVgMfaeHRyi1ML7y"
@@ -1230,8 +1395,8 @@
             "Erykah Badu"
         ],
         "genres": [
-            "r&b",
-            "neo soul"
+            "neo soul",
+            "r&b"
         ],
         "album": "Baduizm",
         "id": "2jAn0rAOyLW6hIEuIDNcoT"
@@ -1313,8 +1478,8 @@
             "Erykah Badu"
         ],
         "genres": [
-            "r&b",
-            "neo soul"
+            "neo soul",
+            "r&b"
         ],
         "album": "Mama's Gun",
         "id": "7pv80uUHfocFqfTytu1MVi"
@@ -1337,8 +1502,8 @@
             "Patrice Rushen"
         ],
         "genres": [
-            "disco",
             "post-disco",
+            "disco",
             "jazz funk"
         ],
         "album": "Straight from the Heart (Remastered)",
@@ -1350,9 +1515,9 @@
             "Rainbow Team"
         ],
         "genres": [
+            "post-disco",
             "disco",
-            "italo disco",
-            "post-disco"
+            "italo disco"
         ],
         "album": "A Song for You (LP)",
         "id": "5g8HsyMKCSEwINCdr3ynWH"
@@ -1364,9 +1529,9 @@
             "Dungen"
         ],
         "genres": [
-            "psychedelic pop",
             "psychedelic rock",
-            "space rock"
+            "space rock",
+            "psychedelic pop"
         ],
         "album": "Filmen",
         "id": "2h9JsVN8Iy5RWrs7ados8Q"
@@ -1402,10 +1567,10 @@
             "Charlotte Plank"
         ],
         "genres": [
-            "bass house",
-            "jungle",
+            "bassline",
             "drum and bass",
-            "bassline"
+            "jungle",
+            "bass house"
         ],
         "album": "Rave Out",
         "id": "0cIkdVvxT2lalJFH254lYA"
@@ -1525,8 +1690,8 @@
             "Tame Impala"
         ],
         "genres": [
-            "psychedelic pop",
-            "indie"
+            "indie",
+            "psychedelic pop"
         ],
         "album": "Currents",
         "id": "0xtIp0lgccN85GfGOekS5L"
@@ -1571,9 +1736,9 @@
             "Dungen"
         ],
         "genres": [
-            "psychedelic pop",
             "psychedelic rock",
-            "space rock"
+            "space rock",
+            "psychedelic pop"
         ],
         "album": "4",
         "id": "1ZF4P1RzhGwuo0plWC24pC"
@@ -1623,8 +1788,7 @@
             "Majid Jordan"
         ],
         "genres": [
-            "rap",
-            "hip hop"
+            "rap"
         ],
         "album": "Views",
         "id": "3ppVO2tyWRRznNmONvt7Se"
@@ -1644,10 +1808,10 @@
             "Jimi Hendrix"
         ],
         "genres": [
-            "blues rock",
-            "acid rock",
+            "psychedelic rock",
             "classic rock",
-            "psychedelic rock"
+            "acid rock",
+            "blues rock"
         ],
         "album": "Electric Ladyland",
         "id": "2aoo2jlRnM3A0NyLQqMN2f"
@@ -1671,10 +1835,10 @@
             "Simon Dufour"
         ],
         "genres": [
-            "nu jazz",
-            "jazz rap",
             "indie jazz",
-            "jazz"
+            "nu jazz",
+            "jazz",
+            "jazz rap"
         ],
         "album": "The Duke",
         "id": "6Sn8gX7ls3ub1mKEpvBD5S"
@@ -1707,10 +1871,10 @@
             "Tammi Terrell"
         ],
         "genres": [
-            "soul",
-            "motown",
+            "quiet storm",
             "northern soul",
-            "quiet storm"
+            "motown",
+            "soul"
         ],
         "album": "United",
         "id": "7tqhbajSfrz2F7E1Z75ASX"
@@ -1722,8 +1886,8 @@
         ],
         "genres": [
             "indie rock",
-            "indie",
-            "baroque pop"
+            "baroque pop",
+            "indie"
         ],
         "album": "Veckatimest",
         "id": "0iTpQYzJnYgh7kIxyq8A2O"
@@ -1743,8 +1907,8 @@
             "Stevie Wonder"
         ],
         "genres": [
-            "soul",
-            "motown"
+            "motown",
+            "soul"
         ],
         "album": "Songs In The Key Of Life",
         "id": "39sdlCugrGBsoC4Flos0HO"
@@ -2018,9 +2182,7 @@
         "artists": [
             "Sonder"
         ],
-        "genres": [
-            "r&b"
-        ],
+        "genres": [],
         "album": "Too Fast",
         "id": "42QRyJd5x6e2TFR1S41g2p"
     },
@@ -2215,8 +2377,8 @@
             "Jordan Rakei"
         ],
         "genres": [
-            "jazz rap",
-            "neo soul"
+            "neo soul",
+            "jazz rap"
         ],
         "album": "Not Waving, But Drowning",
         "id": "64I9byMYBlS1ARsC3vtpgW"
@@ -2364,9 +2526,8 @@
             "PARTYNEXTDOOR"
         ],
         "genres": [
-            "r&b",
             "rap",
-            "hip hop"
+            "r&b"
         ],
         "album": "If You're Reading This It's Too Late",
         "id": "1OHoBC4icbuNhpSxP400sv"
@@ -2429,8 +2590,8 @@
             "Lil Uzi Vert"
         ],
         "genres": [
-            "melodic rap",
-            "rage rap"
+            "rage rap",
+            "melodic rap"
         ],
         "album": "Die Lit",
         "id": "2BJSMvOGABRxokHKB0OI8i"
@@ -2475,8 +2636,8 @@
             "PARTYNEXTDOOR"
         ],
         "genres": [
-            "r&b",
-            "rap"
+            "rap",
+            "r&b"
         ],
         "album": "ye",
         "id": "7vgTNTaEz3CsBZ1N4YQalM"

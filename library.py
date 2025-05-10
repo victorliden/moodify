@@ -5,6 +5,7 @@ import os
 from typing import Any
 import json
 from genre_to_mood_dict import genre_mood_dict 
+from openai_methods import mood_sorter
 
 CLIENT_ID = os.environ.get("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
@@ -123,25 +124,24 @@ class Library():
 
         return all_tracks
     
-    def get_playlists_def(self) -> dict[str, list[str]]:     #temporary - will only work for my one
-        return genre_mood_dict
+    def get_playlists_def(self) -> list[dict[str, list[str]]]:     #temporary - will only work for my one
+        return mood_sorter(list(self.covered_genres))["moods"]
     
     def split_into_playlists(self, ):
 
         mood_tracks_dict : dict[str, list[dict]] = {}
-        playlist_def = self.get_playlists_def()
+        playlist_def : list = self.get_playlists_def()
 
-        for mood in playlist_def:
-            mood_tracks_dict[mood] = []
+        mood_tracks_dict = {mood["name"]: [] for mood in playlist_def}
 
         mood_tracks_dict["others"] = []
 
         for track in self.tracks:
             match = False
             track_genres = set(track["genres"])
-            for mood, genres_in_mood in playlist_def.items():
-                if track_genres & set(genres_in_mood):
-                    mood_tracks_dict[mood].append(track)
+            for mood_dict in playlist_def:
+                if track_genres & set(mood_dict["genres"]):
+                    mood_tracks_dict[mood_dict["name"]].append(track)
                     match = True
             if not match:
                 mood_tracks_dict["others"].append(track)
@@ -190,7 +190,7 @@ class Library():
             playlist_created = False
 
             for playlist in user_playlists:
-                if str(playlist.get("name")) == str("Liked Songs - " + mood):
+                if "(Moodify) Liked Songs - " in str(playlist.get("name")) == str("Liked Songs - " + mood):
                     for i in range(0, len(track_ids), 100):
                         chunk = track_ids[i:i+100]
                         if i == 0:
