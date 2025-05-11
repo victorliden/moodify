@@ -127,11 +127,16 @@ class Library():
 
         return all_tracks
     
-    def get_playlists_def(self) -> list[dict[str, list[str]]]:     #temporary - will only work for my one
-        return mood_sorter(list(self.covered_genres))["moods"]
+    def get_playlists_def(self) -> list[dict[str, list[str]]]:    #temporary - will only work for my one
+        print("Dividing genres into moods")
+        try:   
+            return mood_sorter(list(self.covered_genres))["moods"]
+        except Exception as e:
+            print(e)
+            return [{}]
     
     def split_into_playlists(self, ):
-
+        print("Sorting tracks into playlistst")
         mood_tracks_dict : dict[str, list[dict]] = {}
         playlist_def : list = self.get_playlists_def()
 
@@ -149,8 +154,6 @@ class Library():
             if not match:
                 mood_tracks_dict["others"].append(track)
 
-
-        #testing
         with open("mood_playlists.txt", "w", encoding="utf-8") as f:
             for mood, tracks in mood_tracks_dict.items():
                 f.write(f"{mood.upper()} PLAYLIST\n")
