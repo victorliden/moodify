@@ -13,30 +13,38 @@ CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
 class Track():
 
     def __init__(self, track : dict, library) -> None:
+        print(f"Processing {self}")
         self.library = library
-        self.track = track
         self.artists = [artist['name'] for artist in track['artists']]
         self.title = track['name']
         self.album = track['album']
-        self.genres = self.get_genres()
         self.id = track["id"]
-        
-        
-        print(f"Processing {self}")
 
-    def get_genres(self) -> set[Any]:
-        artists = self.track['artists']
+
+        artists=track['artists']
         artist_ids = [artist['uri'].split(':')[-1] for artist in artists]
 
-        genres = set()
+        self.genres = set()
         # Batch artist IDs into chunks of 50
         for i in range(0, len(artist_ids), 50):
             batch_ids = artist_ids[i:i + 50]
             retrieved_artists = self.library.sp.artists(batch_ids)['artists']
             for artist in retrieved_artists:
-                genres.update(artist.get('genres', []))
+                self.genres.update(artist.get('genres', []))
 
-        return genres
+    # def get_genres(self) -> set[Any]:
+    #     track['artists']
+    #     artist_ids = [artist['uri'].split(':')[-1] for artist in artists]
+
+    #     genres = set()
+    #     # Batch artist IDs into chunks of 50
+    #     for i in range(0, len(artist_ids), 50):
+    #         batch_ids = artist_ids[i:i + 50]
+    #         retrieved_artists = self.library.sp.artists(batch_ids)['artists']
+    #         for artist in retrieved_artists:
+    #             genres.update(artist.get('genres', []))
+
+    #     return genres
     
     def get_track_dict(self):
         track_data = {
@@ -153,6 +161,8 @@ class Library():
                     match = True
             if not match:
                 mood_tracks_dict["others"].append(track)
+
+        print("Playlists are made")
 
         with open("mood_playlists.txt", "w", encoding="utf-8") as f:
             for mood, tracks in mood_tracks_dict.items():
