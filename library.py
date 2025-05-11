@@ -2,7 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from spotipy import Spotify
 import os
-from typing import Any
+from typing import Any, Iterator
 import json
 from genre_to_mood_dict import genre_mood_dict 
 from openai_methods import mood_sorter
@@ -17,12 +17,11 @@ class Track():
         self.library = library
         self.artists = [artist['name'] for artist in track['artists']]
         self.title = track['name']
-        self.album = track['album']
+        self.album = track['album']["name"]
         self.id = track["id"]
         print(f"Processing {self}")
 
-        artists=track['artists']
-        artist_ids = [artist['uri'].split(':')[-1] for artist in artists]
+        artist_ids = [artist['uri'].split(':')[-1] for artist in track['artists']]
 
         self.genres = set()
         # Batch artist IDs into chunks of 50
@@ -86,8 +85,7 @@ class Library():
         i=0
         for item in self._get_all_saved_tracks():
             try:
-                track = Track(item["track"], self)
-                track = track.get_track_dict()
+                track = Track(item["track"], self).get_track_dict()
                 self.tracks.append(track)
                 for genre in track["genres"]:
                     self.covered_genres[genre] = self.covered_genres.get(genre, 0) + 1
@@ -119,21 +117,16 @@ class Library():
         self.sorted_genres = list_genres
         return list_genres
     
-    def _get_all_saved_tracks(self,) -> list[Any]:
-        all_tracks = []
+    def _get_all_saved_tracks(self) -> Iterator[Any]:
         offset = 0
-
         while True:
             result : Any = self.sp.current_user_saved_tracks(offset=offset, limit=50)
-            items = result.get("items")
-
+            items = result.get("items", [])
             if not items:
                 break
-
-            all_tracks.extend(items)
+            for item in items:
+                yield item
             offset += 50
-
-        return all_tracks
     
     def get_playlists_def(self) -> list[dict[str, list[str]]]:    #temporary - will only work for my one
         print("Dividing genres into moods")
