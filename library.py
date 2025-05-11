@@ -24,15 +24,18 @@ class Track():
         
         print(f"Processing {self}")
 
-    def get_genres(self) -> set[Any]:    #Could check if artist already is in library to reduce api-calls
+    def get_genres(self) -> set[Any]:
         artists = self.track['artists']
+        artist_ids = [artist['uri'].split(':')[-1] for artist in artists]
 
         genres = set()
-        for artist in artists:
-            retreived_artist : Any = self.library.sp.artist(artist['uri'])
-            artist_genres = retreived_artist['genres']
-            for genre in artist_genres:
-                genres.add(genre)
+        # Batch artist IDs into chunks of 50
+        for i in range(0, len(artist_ids), 50):
+            batch_ids = artist_ids[i:i + 50]
+            retrieved_artists = self.library.sp.artists(batch_ids)['artists']
+            for artist in retrieved_artists:
+                genres.update(artist.get('genres', []))
+
         return genres
     
     def get_track_dict(self):
