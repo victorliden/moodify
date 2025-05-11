@@ -13,13 +13,13 @@ CLIENT_SECRET = os.environ.get("SPOTIFY_CLIENT_SECRET")
 class Track():
 
     def __init__(self, track : dict, library) -> None:
-        print(f"Processing {self}")
+        
         self.library = library
         self.artists = [artist['name'] for artist in track['artists']]
         self.title = track['name']
         self.album = track['album']
         self.id = track["id"]
-
+        print(f"Processing {self}")
 
         artists=track['artists']
         artist_ids = [artist['uri'].split(':')[-1] for artist in artists]
