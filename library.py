@@ -85,6 +85,7 @@ class Library():
         i=0
         for item in self._get_all_saved_tracks():
             try:
+                print(item)
                 track = Track(item["track"], self).get_track_dict()
                 self.tracks.append(track)
                 for genre in track["genres"]:
